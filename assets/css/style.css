@@ -11,7 +11,7 @@ body{
 
 .container{
 	width: 100%;
-	max-width: 1000px;
+	
 	margin: 0 auto;
 }
 
@@ -26,6 +26,7 @@ body{
 	min-height: 7px;
 	/*gutters*/
 	padding: 12px;
+	
 }
 
 /*(100/12)*num-col*/
@@ -59,6 +60,7 @@ img {
 
 #titulo img, #secondPicture img, #lastPicture img{
 	filter: grayscale(100%);
+	padding: 10px 0;
 }
 
 #about,#pictures{
@@ -83,8 +85,17 @@ img {
 	border: 8px solid #FFF;
 }
 
-#lastPicture p{
+.footer{
 	text-align: right;
 }
 
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+}
 
